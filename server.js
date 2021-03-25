@@ -27,7 +27,6 @@ app.get("/query", async (req, res) => {
 
 app.get("/location", async (req, res) => {
   const woeid = req.param("id");
-  console.log(woeid);
   await fetch("https://www.metaweather.com/api/location/" + woeid)
     .then((data) => data.text())
     .then((text) => res.send(text));
