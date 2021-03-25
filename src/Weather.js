@@ -24,6 +24,10 @@ const Weather = function Weather() {
     }
   }, [searchValue]);
 
+  function cancelSearch() {
+    console.log("hi");
+    setSearchActive(false);
+  }
   useEffect(() => {
     if (searchActive) document.querySelector(".inputSearch").focus();
   }, [searchActive]);
@@ -45,7 +49,9 @@ const Weather = function Weather() {
                   setSearchValue(e.target.value);
                 }}
               />
-              <span className="cancelSearch">&#10005;</span>
+              <span className="cancelSearch" onClick={() => cancelSearch()}>
+                &#10005;
+              </span>
             </div>
           </div>
           <div className="locationElements">

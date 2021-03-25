@@ -1,4 +1,4 @@
-# Country Quiz
+# React Weather App
 
-Demo:
-https://upbeat-noether-60760f.netlify.app/
+npm install
+node server.js
