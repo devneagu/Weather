@@ -143,9 +143,9 @@ const Weather = function Weather() {
               </p>
               <p>
                 Today -
-                {new Date(
-                  item.consolidated_weather[0].applicable_date
-                ).toDateString()}
+                {new Date(item.consolidated_weather[0].applicable_date)
+                  .toDateString()
+                  .replace(" " + new Date().getFullYear(), "")}
               </p>
               <p key={item.woeid}>{item.title} </p>
             </div>
