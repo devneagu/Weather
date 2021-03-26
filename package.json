@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url ./",
     "format": "prettier \"src/**/*.{js,html,svg}\" --write",
